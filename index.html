@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The interval between two dates">
+  <title>Coursework_1</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="container">
+      <div class="form">
+        <form onsubmit="return false;" action="#" method="post">
+          <label for="startdate">Start date</label>
+          <input type="date" name="Start date" id="startdate" class="inputdate" required>
+          <label for="enddate">End date</label>
+          <input type="date" name="Start date" id="enddate" class="inputdate" required>
+          <div class="form__preset">
+            <button class="presweek" id="presetweek">Week</button>
+            <button class="presmon" id="presetmonth">Month</button>
+          </div>
+          <div class="form__days">
+            <select name="days" class="days" id="days">
+              <option value="alldays">All days</option>
+              <option value="workdays">Working days</option>
+              <option value="weekend">Weekend</option>
+            </select>
+          </div>
+          <div class="form__time">
+            <select name="time" class="time" id="time">
+              <option value="days">Days</option>
+              <option value="hours">Hours</option>
+              <option value="minutes">Minutes</option>
+              <option value="seconds">Seconds</option>
+            </select>
+          </div>
+          <div class="form__sub">
+            <button type="button" class="btn" id="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="container start">
+      <div class="table">
+        <table class="table__bor">
+          <thead>
+            <tr>
+              <th class="base_width">Start date</th>
+              <th class="base_width">End date</th>
+              <th class="base_width">Result</th>
+            </tr>
+          </thead>
+          <tbody id="data">
+
+
+          </tbody>
+
+        </table>
+      </div>
+    </section>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

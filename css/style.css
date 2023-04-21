@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background: url(../img/clock.jpg);
+  background-size: cover;
+  min-height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  height: 50vh;
+  padding-left: 150px;
+}
+
+.start {
+  align-items: flex-start;
+}
+
+.table__bor {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 700px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #C7CEE1;
+  opacity: 0.3;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 50%;
+}
+
+.inputdate {
+  margin: 35px;
+}
+
+.presweek, .time, .days {
+  margin: 0 35px 35px 0;
+}
+
+.presweek, .presmon, .btn {
+  background-color: #C7CEE1;
+  border-radius: 7px;
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+    padding-left: 100px;
+  }
+
+  .table__bor {
+    width: 550px;
+  }
+
+  td, th {
+    padding: 3px;
+  }
+
+  .form {
+    flex: 0 1 47%;
+  }
+
+  .inputdate {
+    margin: 0 0 20px 0;
+  }
+
+  .presweek, .time, .days {
+    margin: 0 35px 20px 0;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .container {
+    padding-left: 90px;
+  }
+
+  .table__bor {
+    width: 470px;
+  }
+
+  td, th {
+    padding: 3px;
+  }
+
+  .form {
+    flex: 0 1 32%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .container {
+    padding-left: 80px;
+  }
+
+  .table__bor {
+    width: 450px;
+  }
+
+  td, th {
+    padding: 3px;
+  }
+
+  .form {
+    flex: 0 1 38%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    padding-left: 70px;
+  }
+
+  .table__bor {
+    width: 350px;
+  }
+
+  .form {
+    flex: 0 1 36%;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .container {
+    padding-left: 40px;
+    height: 70vh;
+  }
+
+  .table__bor {
+    width: 250px;
+  }
+
+  td, th {
+    padding: 3px;
+  }
+
+  .form {
+    flex: inherit;
+  }
+
+  .inputdate {
+    margin: 0 0 20px 0;
+  }
+
+  .presweek, .presmon, .time, .days {
+    margin: 0 35px 20px 0;
+  }
+}
